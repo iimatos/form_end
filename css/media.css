@@ -1,0 +1,50 @@
+@media (max-width: 1024px) {
+  .flex-item-about2 {
+    margin: 3rem 0 0 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-item-about2 {
+    margin: 3rem 0 0 3rem;
+  }
+
+  .how-grid p {
+    font-size: 2rem;
+  }
+
+  .how-flex-item1 {
+    flex: 0 0 6rem;
+  }
+
+  #politica {
+    padding-left: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 50%;
+  }
+
+  .flex-item-about1 {
+    flex: 1 1;
+    max-width: 32rem;
+  }
+
+  .flex-item-about2 {
+    flex: 1 1 32rem;
+    max-height: 28rem;
+    margin: 3rem 0 0 0;
+  }
+
+.tip-grid p{
+  margin: 0 0 0 3rem;
+}
+
+  #politica {
+    margin-left: 2rem;
+    padding-right: 2rem;
+  }
+}

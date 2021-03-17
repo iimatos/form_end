@@ -1,0 +1,402 @@
+/* RESET */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ELEMENTOS GERAIS */
+
+body {
+  background: #ffffff;
+  font-family: "Bebas Neue Pro", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6.104rem;
+  font-weight: 400;
+  line-height: 6.4rem;
+  color: white;
+}
+
+span {
+  font-weight: 900;
+  color: #e6df00;
+}
+
+p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  line-height: 135%;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  font-size: 3.3rem;
+  color: white;
+  border: 0.4rem solid #e6df00;
+  border-radius: 0.4rem;
+  width: 15.6rem;
+  padding: 0.5rem 1.1rem;
+}
+
+.btn:hover {
+  background: tomato;
+  border: 0.4rem solid tomato;
+}
+
+/* FIM DOS ESTILOS GERAIS */
+
+/* INÍCIO DO HEADER */
+
+.header-bg {
+  position: fixed;
+  background: #1d1d1b;
+  text-align: center;
+  box-shadow: 0 3px 6px #67676791;
+  width: 100%;
+  padding: 1.5rem;
+  top: 0;
+  z-index: 9;
+}
+
+.logo {
+  width: 16rem;
+  height: 3rem;
+}
+
+/* FIM DO HEADER */
+
+.intro {
+  margin-top: 6.3rem;
+  width: 100%;
+  height: 650px;
+  background: url(../img/bg_intro@2x.jpg);
+  background-size: cover;
+}
+
+.flex-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-intro1 {
+  max-width: 65rem;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+
+.flex-item-intro2 {
+  margin-top: 6rem;
+}
+
+/* FIM DA INTRODUÇÃO */
+
+/* INÍCIO DO SOBRE */
+
+.about {
+  margin: 12rem 0;
+}
+
+.grid-about {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+.flex-item-about1 {
+  flex: 1 1 32rem;
+  max-width: 40rem;
+}
+
+.flex-item-about2 {
+  font-size: 2.5rem;
+  position: relative;
+  flex: 1 1 40rem;
+  margin: 0 0 0 6rem;
+  padding-left: 2rem;
+}
+
+.flex-item-about2:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 100%;
+  background: tomato;
+}
+
+/* FIM DO SOBRE */
+
+/* INÍCIO DO HOW */
+
+.how {
+  background: url(../img/bg_how.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 53rem;
+}
+
+.how-grid {
+  display: flex;
+  max-width: 96rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 1rem;
+}
+
+.how-flex-item1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 36.3rem;
+  justify-content: space-evenly;
+}
+
+.how-flex-item1 img {
+  padding-bottom: 2rem;
+}
+
+.how-flex-item2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 36.3rem;
+}
+
+.how-flex-item2 p {
+  position: relative;
+  max-width: 60rem;
+  margin: 0 0 0 5rem;
+  padding: 0 0 0 2rem;
+  color: white;
+}
+
+.how-flex-item2 p:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 100%;
+  background: tomato;
+}
+
+.how-btn {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+/* FIM DA SEÇÃO HOW */
+
+/* INÍCIO DA SEÇÃO TIP */
+
+.tip {
+  background: #3a3a3a;
+  padding: 6.5rem 0;
+}
+
+.tip-grid {
+  display: flex;
+  max-width: 96rem;
+  margin: 0 auto 0 auto;
+  padding: 0 1rem;
+}
+.tip p {
+  position: relative;
+  margin: 0 0 0 6rem;
+  color: white;
+  padding-left: 2rem;
+  line-height: 123%;
+}
+
+.tip p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: tomato;
+  left: 0;
+  margin: auto;
+}
+
+.tip img {
+  width: 100%;
+  max-width: 10rem;
+}
+
+/* FIM DA SEÇÃO DE TIP */
+
+/* INÍCIO DA SEÇÃO DE FORM */
+
+.form-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  flex-direction: column;
+  background: linear-gradient(65deg, #f57200, #e6df00);
+}
+
+.form-bg h2 {
+  font-size: 3.902rem;
+  max-width: 70rem;
+  color: black;
+  padding-bottom: 5rem;
+}
+
+.form-container {
+  display: flex;
+  background: #3a3a3a;
+  width: 100%;
+  max-width: 70rem;
+  height: 100%;
+  max-height: 60rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -0.5rem 0.5rem 0.5rem #000000cc;
+}
+
+.form-container img {
+  width: 100%;
+  max-width: 10rem;
+  min-height: 3.3rem;
+  margin: 2rem 0;
+}
+
+.input-field {
+  margin-bottom: 2rem;
+}
+
+.input-field input {
+  width: 22rem;
+  padding: 1.5rem 0 1.5rem 0.5rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 0.6rem #e6df00;
+}
+
+.input-field input:focus {
+  outline: none;
+  border: 0.4rem solid #e6df00;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.submit {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+input[type="submit"] {
+  position: relative;
+  width: 100%;
+  max-width: 22rem;
+  padding: 1.5rem;
+  background: none;
+  border: 0.4rem solid #e6df00;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.6rem #1d1d1b;
+  font-family: "Bebas Neue Pro", Arial, Helvetica, sans-serif;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.5 ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background: tomato;
+  border: 0.4rem solid tomato;
+}
+
+/* FIM DA SEÇÃO DE FORM */
+
+/* INÍCIO FOOTER */
+
+footer {
+  background: #000000;
+  padding: 2rem 0;
+}
+
+.footer-grid {
+  display: flex;
+  max-width: 96rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-grid img {
+  width: 100%;
+  max-width: 16rem;
+  height: 3rem;
+}
+.footer-grid a {
+  font-size: 1.2rem;
+  color: #e6df00;
+  letter-spacing: 0.1rem;
+}
+
+.footer-2-row {
+  display: flex;
+  justify-content: space;
+  align-items: center;
+}
+
+.footer-2-row a {
+  margin-right: 1rem;
+}
+
+#politica {
+  margin-left: 3rem;
+  padding-right: 2rem;
+}
+
+/* FIM DO  FOOTER*/
