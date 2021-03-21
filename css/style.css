@@ -73,7 +73,7 @@ a {
   width: 95%;
   max-width: 101.15rem;
   height: 100%;
-  max-height: 70rem;
+  min-height: 70rem;
   background: #ffff;
   border-radius: 0.9rem;
   box-shadow: -0.1rem 0.4rem 1rem rgba(235, 235, 235, 0.8);
